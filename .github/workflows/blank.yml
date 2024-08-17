@@ -37,8 +37,9 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
+          pip install datasets
           chmod 777 ./run.sh
-          ./run.sh
+          python ./run.sh
 
       - name: Upload artifacts
         uses: actions/upload-artifact@v2
